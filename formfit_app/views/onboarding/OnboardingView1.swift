@@ -85,6 +85,10 @@ struct OnboardingContainerView: View {
             case 7:
                 BarriersSelectionScreen()
             case 8:
+                RatingScreen()
+            case 9:
+                IntegrationScreen()
+            case 10:
                 FinalOnboardingScreen()
             default:
                 Text("Error: Invalid Onboarding Step")
@@ -202,32 +206,4 @@ struct AnimatedTextScreen: View {
     }
 }
 
-struct MainAppView: View {
-    var body: some View {
-        TabView {
-            Text("Home Tab")
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
-            
-            Text("Workouts Tab")
-                .tabItem {
-                    Image(systemName: "figure.walk")
-                    Text("Workouts")
-                }
-            
-            Text("Progress Tab")
-                .tabItem {
-                    Image(systemName: "chart.bar.fill")
-                    Text("Progress")
-                }
-            
-            Text("Profile Tab")
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
-                }
-        }
-    }
-}
+

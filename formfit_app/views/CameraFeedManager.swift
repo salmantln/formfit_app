@@ -14,7 +14,7 @@ class MoveNetPoseEstimator {
 
     init() {
         // Load the MoveNet model from the app bundle
-        guard let modelPath = Bundle.main.path(forResource: "movenet_thunder", ofType: "tflite") else {
+        guard let modelPath = Bundle.main.path(forResource: "4", ofType: "tflite") else {
             fatalError("Failed to load MoveNet model")
         }
 
